@@ -9,7 +9,7 @@ if [ $? != 0 ]; then
 fi
 #
 #echo ARGS=[$ARGS]
-#½«¹æ·¶»¯ºóµÄÃüÁîÐÐ²ÎÊý·ÖÅäÖÁÎ»ÖÃ²ÎÊý£¨$1,$2,...)
+#å°†è§„èŒƒåŒ–åŽçš„å‘½ä»¤è¡Œå‚æ•°åˆ†é…è‡³ä½ç½®å‚æ•°ï¼ˆ$1,$2,...)
 eval set -- "${ARGS}"
 #echo formatted parameters=[$@]
 
@@ -56,5 +56,5 @@ elif [ "$forstage" = "two" ]; then
 	Rscript model2.R ${forinput} ${forprefix}
 else
     echo "error, you should choose one or two as input!" >&2
-    exit 1  # ÖÕÖ¹½Å±¾²¢·µ»Ø´íÎó×´Ì¬
+    exit 1  # ç»ˆæ­¢è„šæœ¬å¹¶è¿”å›žé”™è¯¯çŠ¶æ€
 fi
